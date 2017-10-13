@@ -11,9 +11,8 @@ title: "Leon Moonen – Software Explorer"
 subheadline: ""
 show_meta: false
 teaser: 
-    text: "Welcome to my homepage! I am a researcher in Software Engineering. My research is aimed at creating better techniques and tools to support the understanding, assessment and evolution of large industrial software systems. It involves the combination of several subfields of computing, such as software analytics, software reverse engineering, software repository mining, machine learning, program comprehension, and empirical software engineering. 
-    <BR><BR>For an overview of our results, have a look at my <BR> <a href='/publications/'>publication overview</a>."
-    image: "Leon_Moonen_small.jpg"
+    text: "Welcome to my homepage! <BR>I am a researcher in Software Engineering. My research is aimed at the design and development of advanced data-driven techniques and tools to support the understanding, assessment and evolution of large industrial software systems. This work combines several fields, such as software analytics, software reverse engineering, software repository mining, machine learning, program comprehension, and empirical software engineering."
+    image: "Leon_Moonen_portrait.jpg"
     name: "Leon Moonen"
 header:
    image_fullwidth: "header_unsplash_river.jpg"
