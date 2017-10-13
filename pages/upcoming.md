@@ -8,7 +8,7 @@ header:
    image_fullwidth: "header_unsplash_balloons.jpg"
 permalink: "/activities/upcoming/"
 upcoming:
-- 1st International Workshop on Technical Debt Analytics ([TDA2016](https://tda2016.bitbucket.io), organizer)
+- 2nd International Workshop on Technical Debt Analytics ([TDA2017](https://tda-workshop.bitbucket.io/2017/), organizer)
 ---
 <ul>
     {% for item in page.upcoming %}
