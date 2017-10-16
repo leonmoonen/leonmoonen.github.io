@@ -9,11 +9,11 @@ header:
     image_fullwidth: "header_unsplash_coffee_beans.jpg"
 ---
 
-My research focuses on the design and development of advanced, scalable techniques and tools for the exploration, assessment and evolution of large industrial software systems. This involves the combination of several subfields of software engineering, such as program comprehension, reverse engineering, program analysis, software visualization and empirical software engineering.  Usually, I try to find answer to these questions in close collaboration with industry.
+My research focuses on the design and development of advanced data-driven techniques and tools that support software engineers with the understanding, assessment and evolution of large industrial software systems. This work combines several fields such as software analytics, program comprehension, software reverse engineering, software repository mining, machine learning and empirical software engineering.  Usually, I try to find answer to these questions in close collaboration with industry.
 
-At Simula, I lead the EvolveIT project aimed at devising recommendation systems to support the evolution of safety-critical component-based cyber-physical product families and the EvoTest project that builds on software analytics to enable smarter testing of evolving systems. In these projects we collaborate closely with Kongsberg Maritime and Cisco.
+At Simula, I lead projects that are aimed at supporting smarter evolution and testing of safety-critical cyber-physical product families, enabling high integrity, and anti-fragile software engineering, and devising software analytics for continuous software quality and maintainability assessments. In several of these projects we collaborate closely with industrial partners Kongsberg Maritime and Cisco Norway.
 
-Other topics that we currently are, or previously have been, investigating include:
+Other topics that we are, or have been, investigating include:
 
 * assessing and improving the cost-effectiveness of automated software inspections by building on our work on static program analysis & (static) profiling;
 * measuring and managing technical debt;
