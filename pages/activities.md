@@ -33,6 +33,7 @@ and earlier on:
 
 In addition, I am, or have been, involved in the organisation of the following conferences and workshops:
 
+- 2nd International Workshop on Technical Debt Analytics ([TDA2017](https://tda-workshop.bitbucket.io/2017/), organizer)
 - 17th IEEE International Working Conference on Source Code Analysis and Manipulation ([SCAM 2017](http://www.ieee-scam.org/2017/), steering committee, program committee)
 - 33rd IEEE International Conference on Software Maintenance and Evolution ([ICSME 2017](https://icsme2017.github.io/), program committee)
 - 4th International Workshop on Patterns Promotion and Anti-patterns Prevention ([PPAP 2017](http://ppap.soccerlab.polymtl.ca/), organizer)
