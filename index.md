@@ -30,6 +30,6 @@ widget-2:
 widget-3:
     title: "Recent Tweets"
     url: "https://twitter.com/intent/follow?screen_name=LeonMoonen"
-    text: "<div id='recentTweets'></div><script data-cfasync='false' src='https://platform.twitter.com/widgets.js'></script>"
+    text: "<div id='recentTweets'><a class='twitter-timeline' href='https://twitter.com/LeonMoonen' data-tweet-limit='5'></a></div>"
     alt-more: "« follow @LeonMoonen on Twitter »"
 ---

@@ -24,6 +24,7 @@ news:
 - "I will give a keynote at [BENEVOL 2014](http://benevol.cwi.nl/2014/) in Amsterdam, the Netherlands"
 - "New article ``[Towards Evidence-Based Recommendations to Guide the Evolution of Component-Based Product Families](https://www.simula.no/publications/towards_evidence-based_recommendations)'' has been accepted in [SCP](http://www.sciencedirect.com/science/article/pii/S0167642313002931)"
 - "Our paper ``[Assembling Multiple-Case Studies: Potential, Principles and Practical Considerations](https://www.simula.no/publications/Simula.simula.1916)'' (with Aiko Yamashita) has been accepted at [EASE 2014](http://ease2014.org/)."
+- (the start of these pages in 2014)
 ---
 
 <ul>
