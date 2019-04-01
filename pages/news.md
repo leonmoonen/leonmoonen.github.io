@@ -8,6 +8,9 @@ header:
    image_fullwidth: "header_unsplash_dawn.jpg"
 permalink: "/research/news/"
 news:
+- "I'll be attending the [SEREN4 Horizon 2020 Secure Societies Info Day, Workshop and Brokerage Event](https://seren4-h2020-sc7-2019.b2match.io) on 9 April 2019 in Riga, Latvia." 
+- "We have (fully funded) open [PhD](https://www.simula.no/about/job/open-phd-position-secure-software-engineering) and [PostDoc](https://www.simula.no/about/job/open-position-postdoctoral-research-fellow-secure-software-engineering) positions in the secureIT project on applications of machine learning for secure software engineering, funded by the Norwegian Research Council"
+- "Our SCAM 2018 paper ``[The Case for Adaptive Change Recommendation](https://www.simula.no/publications/case-adaptive-change-recommendation)'' (with Sydney Pugh and Dave Binkley) has been invited for a Special Issue in the Journal of Systems and Software."
 - "Our paper ``[The Case for Adaptive Change Recommendation](https://www.simula.no/publications/case-adaptive-change-recommendation)'' (with Sydney Pugh and Dave Binkley) has been accepted at [SCAM 2018](http://www.ieee-scam.org/2018/)."
 - "Our paper ``[Improving Problem Identification via Automated Log Clustering using Dimensionality Reduction](https://www.simula.no/publications/improving-problem-identification-automated-log-clustering-using-dimensionality)'' (with Carl Martin Rosenberg) has been accepted at [ESEM 2018](http://eseiw2018.wixsite.com/esem2018)."
 - "Our article ``[What are the Effects of History Length and Age on Mining Software Change Impact?](https://www.simula.no/publications/what-are-effects-history-length-and-age-mining-software-change-impact)'' (with Thomas Rolfsnes, Dave Binkley and Stefano Di Alesio) has been accepted in the Journal of Empirical Software Engineering ([EMSE](https://doi.org/10.1007/s10664-017-9588-z))."

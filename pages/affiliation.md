@@ -9,7 +9,7 @@ header:
     image_fullwidth: "header_unsplash_aloe.jpg"
 ---
 
-I am [chief research scientist][simhome] in the Software Engineering department at [Simula Research Laboratory][simula] in Norway. [Contact me][contact] if you are interested in discussing opportunities to work with us on [addressing concrete software engineering needs in industry and society][research] based on fundamental research results.
+I am [research professor & chief research scientist][simhome] of Data-Driven Software Engineering at [Simula Research Laboratory][simula] in Norway. [Contact me][contact] if you are interested in discussing opportunities to work with us on [addressing concrete software engineering needs in industry and society][research] based on fundamental research results.
 
 Before moving to Norway, I was [assistant professor][tudhome] in the [Software Evolution Research Lab][swerl] at [Delft University of Technology][tud], the Netherlands, and researcher in (what is now) the [Software Analysis and Transformation][swat] group at the [Centre for Mathematics and Computer Science (CWI)][cwi] in Amsterdam, the Netherlands. Collaborations in both these groups have helped to shape my research interests in exploring novel techniques that are aimed at addressing real-life software engineering challenges. 
 

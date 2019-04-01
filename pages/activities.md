@@ -19,12 +19,12 @@ _Consider submitting a paper and/or attending!_
 
 I serve on the following steering committees:
 
-- IEEE International Working Conference on Source Code Analysis and Manipulation ([SCAM](https://www.ieee-scam.org/), 2003-2006, 2006-2009, 2011-2014, 2014-2017, chair)
-- International Workshop on Patterns Promotion and Anti-patterns Prevention (PPAP, 2013-2017)
+- International Workshop on Patterns Promotion and Anti-patterns Prevention (PPAP, 2013-)
 - Norwegian High Integrity Systems Forum ([HISF](https://www.high-integrity-systems.no/forum/))
 
 and earlier on:
 
+- IEEE International Working Conference on Source Code Analysis and Manipulation ([SCAM](https://www.ieee-scam.org/), 2003-2006, 2006-2009, 2011-2014, 2014-2017, chair)
 - IEEE International Conference on Program Comprehension ([ICPC](https://program-comprehension.org), 2009–2012, 2012–2015, chair).
 - IEEE International Conference on Software Maintenance ([ICSM](http://conferences.computer.org/icsm/), 2009–2012, chair)
 - International Working Conference on Reverse Engineering (WCRE, 2004–2008, 2010–2014. WCRE merged in 2014 with CSMR to form the IEEE International Conference on Software Analysis, Evolution, and Reengineering, SANER).
@@ -33,6 +33,10 @@ and earlier on:
 
 In addition, I am, or have been, involved in the organisation of the following conferences and workshops:
 
+- 18th IEEE International Working Conference on Source Code Analysis and Manipulation ([SCAM 2018](http://www.ieee-scam.org/2018/), program committee)
+- 34rd IEEE International Conference on Software Maintenance and Evolution ([ICSME 2018](https://icsme2018.github.io/), program committee)
+- Euromicro Conference on Software Engineering and Advanced Applications (SEAA 2018), session on Software Engineering and Technical Debt ([SEaTeD 2018)](http://dsd-seaa2018.fit.cvut.cz/seaa/index.php?sec=sessions_seated), program committee)
+- 26th IEEE/ACM International Conference on Program Comprehension ([ICPC 2018](https://conf.researchr.org/home/icpc-2018), program committee)
 - 2nd International Workshop on Technical Debt Analytics ([TDA2017](https://tda-workshop.bitbucket.io/2017/), organizer)
 - 17th IEEE International Working Conference on Source Code Analysis and Manipulation ([SCAM 2017](http://www.ieee-scam.org/2017/), steering committee, program committee)
 - 33rd IEEE International Conference on Software Maintenance and Evolution ([ICSME 2017](https://icsme2017.github.io/), program committee)

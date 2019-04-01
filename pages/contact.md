@@ -11,7 +11,7 @@ header:
 
 ### Electronic
 
-My unified email address is [Leon.Moonen@computer.org][email]. If you experience problems, an alternative address for the same mailbox is [leon@simula.no][simmail].
+My unified email address is [Leon.Moonen@computer.org][email]. If you experience problems, an alternative address to reach the same mailbox is [leon@simula.no][simmail].
 
 You can find me on Twitter as [@LeonMoonen][twitter], on Skype as leonmoonen, and my main web address is [https://leonmoonen.com/][web].
 

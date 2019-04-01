@@ -8,10 +8,11 @@ header:
    image_fullwidth: "header_unsplash_balloons.jpg"
 permalink: "/activities/upcoming/"
 upcoming:
-- 18th IEEE International Working Conference on Source Code Analysis and Manipulation ([SCAM 2018](http://www.ieee-scam.org/2018/), program committee)
-- 34rd IEEE International Conference on Software Maintenance and Evolution ([ICSME 2018](https://icsme2018.github.io/), program committee)
-- Euromicro Conference on Software Engineering and Advanced Applications (SEAA 2018), session on Software Engineering and Technical Debt ([SEaTeD 2018)](http://dsd-seaa2018.fit.cvut.cz/seaa/index.php?sec=sessions_seated), program committee)
-- 26th IEEE/ACM International Conference on Program Comprehension ([ICPC 2018](https://conf.researchr.org/home/icpc-2018), program committee)
+- 27th IEEE/ACM International Conference on Program Comprehension ([ICPC 2019](https://conf.researchr.org/home/icpc-2019), program committee)
+- 7th International Workshop on Realizing Artificial Intelligence Synergies in Software Engineering ([RAISE 2019](http://promisedata.org/raise/2019/), program committee), co-located with ICSE 2019
+- 27th ACM Joint European Software Engineering Conference and Symposium on the Foundations of Software Engineering (ESEC/FSE 2019, Student Research Competition chair)[https://esec-fse19.ut.ee], Tallinn, Estonia, 26-30 August 2019
+- 19th IEEE International Working Conference on Source Code Analysis and Manipulation ([SCAM 2019](http://www.ieee-scam.org/2019/), program committee)
+
 
 ---
 <ul>
