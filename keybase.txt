@@ -1,0 +1,57 @@
+==================================================================
+https://keybase.io/leonmoonen
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://leonmoonen.com
+  * I am leonmoonen (https://keybase.io/leonmoonen) on keybase.
+  * I have a public key ASBc8jKJ7RrEou266-G1NU-nOe8sV0l2kF1Ttj3ZMVhJzwo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120fb7a034f85e5f8a2cdcc4c7d20c30dea2ea3ab4aadd695feb8f1fdb25a2f59aa0a",
+      "host": "keybase.io",
+      "kid": "01205cf23289ed1ac4a2edbaebe1b5354fa739ef2c574976905d53b63dd9315849cf0a",
+      "uid": "47b0aea8e28b489550a8504099133519",
+      "username": "leonmoonen"
+    },
+    "merkle_root": {
+      "ctime": 1571366174,
+      "hash": "4d415fb0b862fd8f001e13cb3cc48e861f3b98f48da4eab680b7834fb246a2be7e774fa7a3bf5ce6fa9a84a28a4062e52eb7f32fe1b1e6ea3e0c14b91fb5a3e1",
+      "hash_meta": "ee92a8b6d4af0a641d4136ff14427d5fc10f286409edca2d03dd03e0b2ec3c78",
+      "seqno": 8208736
+    },
+    "service": {
+      "entropy": "RXxv2gduGJISt8AzlRPxLPOf",
+      "hostname": "leonmoonen.com",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "4.6.0"
+  },
+  "ctime": 1571366200,
+  "expire_in": 504576000,
+  "prev": "7fbef9f6dd9c0917d0b7ba049b0dd83d331feaa52f5b34ecefa7fe8577cc1bc0",
+  "seqno": 12,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgXPIyie0axKLtuuvhtTVPpznvLFdJdpBdU7Y92TFYSc8Kp3BheWxvYWTESpcCDMQgf7759t2cCRfQt7oEmw3YPTMf6qUvWzTs76f+hXfMG8DEIHLL6BHHsOZnO0dh4IXoVPW7TYMF3ENcs2w5JinMuy2zAgHCo3NpZ8RAYrCzBKSC7OWcRKdVCuR7skziuOT0WwyUjfz8rpL8Aej9DMWtR/hDvm8trFm3dbI5QIK/+PfweR2fqiAntI/ODKhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIIdTU4R+lZlLRNR0kChj6XHqc5sj5CIvDvum+FesmFt7o3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/leonmoonen
+
+==================================================================
+
