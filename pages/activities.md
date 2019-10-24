@@ -19,11 +19,11 @@ _Consider submitting a paper and/or attending!_
 
 I serve on the following steering committees:
 
-- International Workshop on Patterns Promotion and Anti-patterns Prevention (PPAP, 2013-)
 - Norwegian High Integrity Systems Forum ([HISF](https://www.high-integrity-systems.no/forum/))
 
 and earlier on:
 
+- International Workshop on Patterns Promotion and Anti-patterns Prevention ([PPAP](http://ppap.soccerlab.polymtl.ca/), 2013-2017)
 - IEEE International Working Conference on Source Code Analysis and Manipulation ([SCAM](https://www.ieee-scam.org/), 2003-2006, 2006-2009, 2011-2014, 2014-2017, chair)
 - IEEE International Conference on Program Comprehension ([ICPC](https://program-comprehension.org), 2009–2012, 2012–2015, chair).
 - IEEE International Conference on Software Maintenance ([ICSM](http://conferences.computer.org/icsm/), 2009–2012, chair)
@@ -33,6 +33,10 @@ and earlier on:
 
 In addition, I am, or have been, involved in the organisation of the following conferences and workshops:
 
+- 19th IEEE International Working Conference on Source Code Analysis and Manipulation ([SCAM 2019](http://www.ieee-scam.org/2019/), program committee)
+- 27th ACM Joint European Software Engineering Conference and Symposium on the Foundations of Software Engineering ([ESEC/FSE 2019](https://esec-fse19.ut.ee), Student Research Competition chair, Tallinn, Estonia, 26-30 August 2019)
+- 7th International Workshop on Realizing Artificial Intelligence Synergies in Software Engineering ([RAISE 2019](http://promisedata.org/raise/2019/), program committee), co-located with ICSE 2019
+- 27th IEEE/ACM International Conference on Program Comprehension ([ICPC 2019](https://conf.researchr.org/home/icpc-2019), program committee)
 - 18th IEEE International Working Conference on Source Code Analysis and Manipulation ([SCAM 2018](http://www.ieee-scam.org/2018/), program committee)
 - 34rd IEEE International Conference on Software Maintenance and Evolution ([ICSME 2018](https://icsme2018.github.io/), program committee)
 - Euromicro Conference on Software Engineering and Advanced Applications (SEAA 2018), session on Software Engineering and Technical Debt ([SEaTeD 2018)](http://dsd-seaa2018.fit.cvut.cz/seaa/index.php?sec=sessions_seated), program committee)
