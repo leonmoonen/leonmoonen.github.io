@@ -9,7 +9,7 @@ header:
     image_fullwidth: "header_unsplash_railroad.jpg"
 ---
 
-Leon Moonen is a Research Professor of Data-Driven Software Engineering at Simula Research Laboratory, Norway.  
+Leon Moonen is a Research Professor of Data-Driven Software Engineering at Simula Research Laboratory, Norway.
 His research is aimed at the design and development of advanced, 
 data-driven techniques and tools that support software engineers with the assessment, 
 evolution, and operations of complex industrial software systems, 
