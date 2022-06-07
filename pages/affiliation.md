@@ -9,7 +9,10 @@ header:
     image_fullwidth: "header_unsplash_aloe.jpg"
 ---
 
-I am [research professor][simhome] of Data-Driven Software Engineering at [Simula Research Laboratory][simula] in Norway. [Contact me][contact] if you are interested in discussing opportunities to work with us on [addressing concrete software engineering needs in industry and society][research] based on fundamental research results.
+I am [research professor][simhome] of Data-Driven Software Engineering at [Simula Research Laboratory][simula] in Norway. 
+I also hold a part-time position in the [Department of Data Science and Analytics][bidept] at [BI Norwegian Business School][bihome].
+
+[Contact me][contact] if you are interested in discussing opportunities to work with us on [addressing concrete software engineering needs in industry and society][research] based on evidence-based research results.
 
 Before moving to Norway, I was [assistant professor][tudhome] in the [Software Evolution Research Lab][swerl] at [Delft University of Technology][tud], the Netherlands, and researcher in (what is now) the [Software Analysis and Transformation][swat] group at the [Centre for Mathematics and Computer Science (CWI)][cwi] in Amsterdam, the Netherlands. Collaborations in both these groups have helped to shape my research interests in exploring novel techniques that are aimed at addressing real-life software engineering challenges. 
 
@@ -18,6 +21,8 @@ I am co-founder of the [Software Improvement Group (SIG)][sig], a company that h
 
 [simhome]: http://www.simula.no/people/leon
 [simula]: http://www.simula.no/
+[bidept]: https://www.bi.edu/research/find-department/department-of-data-science-and-analytics/
+[bihome]: https://www.bi.edu/
 [research]: /research/
 [contact]: /contact/
 [tudhome]: http://swerl.tudelft.nl/leon/
