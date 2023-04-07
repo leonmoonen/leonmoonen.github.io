@@ -7,6 +7,9 @@
     <style>
         body {
             background-color: black;
+            display: -webkit-flex;
+            -webkit-justify-content: center;
+            -webkit-align-items: center;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -14,13 +17,13 @@
             margin: 0;
         }
         #clock {
-            font-size: 200px;
+            font-size:250px;
             color: orange;
             font-family: 'Arial', sans-serif;
         }
         @media screen and (max-device-width: 640px) {
             #clock {
-                font-size: 200px;
+                font-size: 180px;
             }
         }
     </style>
@@ -29,17 +32,17 @@
     <div id="clock">00:00</div>
     <script>
         function updateClock() {
-            let currentTime = new Date();
-            let hours = currentTime.getHours();
-            let minutes = currentTime.getMinutes();
+            var currentTime = new Date();
+            var hours = currentTime.getHours();
+            var minutes = currentTime.getMinutes();
 
             hours = (hours < 10) ? '0' + hours : hours;
             minutes = (minutes < 10) ? '0' + minutes : minutes;
 
             document.getElementById('clock').innerHTML = hours + ':' + minutes;
-            let t = setTimeout(function(){ currentTime() }, 1000);
         }
-        updateClock();
+
+        setInterval(updateClock, 1000);
     </script>
 </body>
 </html>
