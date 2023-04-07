@@ -2,9 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Digital Clock</title>
     <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
         body {
             background-color: black;
             display: -webkit-flex;
@@ -13,17 +17,17 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
-            margin: 0;
+            height: 100%;
         }
         #clock {
-            font-size:250px;
-            color: orange;
-            font-family: 'Trebuchet MS', sans-serif;
+            color: #ff8000;
+            font-family: 'Arial', sans-serif;
+            font-size: calc(10px + 80vmin);
+            white-space: nowrap;
         }
-        @media screen and (max-device-width: 640px) {
+        @media screen  {
             #clock {
-                font-size: 170px;
+                font-size: calc(10px + 40vw);
             }
         }
     </style>
@@ -42,7 +46,23 @@
             document.getElementById('clock').innerHTML = hours + ':' + minutes;
         }
 
-        setInterval(updateClock, 1000);
+        function enterFullScreen() {
+            var docEl = document.documentElement;
+            if (docEl.requestFullscreen) {
+                docEl.requestFullscreen();
+            } else if (docEl.mozRequestFullScreen) { // Firefox
+                docEl.mozRequestFullScreen();
+            } else if (docEl.webkitRequestFullscreen) { // Chrome, Safari and Opera
+                docEl.webkitRequestFullscreen();
+            } else if (docEl.msRequestFullscreen) { // IE/Edge
+                docEl.msRequestFullscreen();
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            enterFullScreen();
+            setInterval(updateClock, 1000);
+        });
     </script>
 </body>
 </html>
