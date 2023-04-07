@@ -1,12 +1,40 @@
----
-layout: page
-show_meta: false
-title: ""
-subheadline: ""
-teaser: ""
-header:
-permalink: "/clock/"
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock</title>
+    <style>
+        body {
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        #clock {
+            font-size: 148px;
+            color: orange;
+            font-family: 'Arial', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div id="clock">00:00</div>
+    <script>
+        function updateClock() {
+            let currentTime = new Date();
+            let hours = currentTime.getHours();
+            let minutes = currentTime.getMinutes();
 
-<p><iframe src="https://free.timeanddate.com/clock/i8sns15i/n1370/tlno/fn16/fs48/fcf90/tc000/pc000/th1/ts1" frameborder="0" width="100%"></iframe></p>
+            hours = (hours < 10) ? '0' + hours : hours;
+            minutes = (minutes < 10) ? '0' + minutes : minutes;
 
+            document.getElementById('clock').innerHTML = hours + ':' + minutes;
+        }
+
+        setInterval(updateClock, 1000);
+    </script>
+</body>
+</html>
