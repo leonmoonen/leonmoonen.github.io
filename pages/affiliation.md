@@ -9,7 +9,7 @@ header:
     image_fullwidth: "header_unsplash_aloe.jpg"
 ---
 
-I am a [research professor][simhome] and head of the [Data-Driven Software Engineering Department][datased] at [Simula Research Laboratory][simula] in Oslo, Norway. I also hold a part-time position in the [Department of Data Science and Analytics][bidept] at [BI Norwegian Business School][bihome].
+I am a [professor][simhome] and head of the [Data-Driven Software Engineering Department][datased] at [Simula Research Laboratory][simula] in Oslo, Norway. I also hold a visiting professor position at the [Department of Data Science and Analytics][bidept] at [BI Norwegian Business School][bihome].
 
 [Contact me][contact] if you are interested in discussing opportunities to work with us on [addressing concrete software engineering needs in industry and society][research] based on evidence-based research results.
 

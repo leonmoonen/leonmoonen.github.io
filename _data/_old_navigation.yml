@@ -21,6 +21,13 @@
   url: "/publications/"
   side: left
 
+- title: Activities
+  url: "/activities/"
+  side: left
+  dropdown:
+  - title: "Upcoming"
+    url: "/activities/upcoming/"
+
 - title: Schedule
   url: "/schedule/"
   side: left
