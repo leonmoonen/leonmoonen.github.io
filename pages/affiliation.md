@@ -9,7 +9,7 @@ header:
     image_fullwidth: "header_unsplash_aloe.jpg"
 ---
 
-I am a [research professor][simhome] and head of the [Data-Driven Software Engineering Department][datased] at [Simula Research Laboratory][simula] in Oslo, Norway. I also hold a part-time position in the [Department of Data Science and Analytics][bidept] at [BI Norwegian Business School][bihome].
+I am a [professor][simhome] and head of the [Data-Driven Software Engineering Department][datased] at [Simula Research Laboratory][simula] in Oslo, Norway. I also hold a visiting professor position at the [Department of Data Science and Analytics][bidept] at [BI Norwegian Business School][bihome].
 
 [Contact me][contact] if you are interested in discussing opportunities to work with us on [addressing concrete software engineering needs in industry and society][research] based on evidence-based research results.
 
@@ -19,7 +19,7 @@ I am co-founder of the [Software Improvement Group (SIG)][sig], a company that h
 
 
 [simhome]: http://www.simula.no/people/leon
-[datased]: https://www.simula.no/research/projects/data-driven-software-engineering-department
+[datased]: https://www.simula.no/research/research-departments/data-driven-software-engineering
 [simula]: http://www.simula.no/
 [bidept]: https://www.bi.edu/research/find-department/department-of-data-science-and-analytics/
 [bihome]: https://www.bi.edu/
