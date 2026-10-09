@@ -71,6 +71,7 @@ exclude:
     - Gemfile
     - Gemfile.lock
     - README.md
+    - DEPENDENCIES.md
     - Makefile
     - logo.graffle
 
