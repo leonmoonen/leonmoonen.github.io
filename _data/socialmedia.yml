@@ -8,25 +8,25 @@
   class: icon-mail
   title: "Email"
 
-- name: Twitter
-  url: https://twitter.com/LeonMoonen
-  class: icon-twitter
-  title: "Twitter"
+#- name: Twitter
+#  url: https://twitter.com/LeonMoonen
+#  class: icon-twitter
+#  title: "Twitter"
 
 - name: LinkedIn
   url: https://www.linkedin.com/in/LeonMoonen
   class: icon-linkedin
   title: "LinkedIn"
 
-- name: Facebook
-  url: https://www.facebook.com/LeonMoonen
-  class: icon-facebook
-  title: "Facebook"
+- name: Orcid
+  url: https://orcid.org/0000-0002-1761-6771
+  class: ai-orcid
+  title: "Orcid"
 
-- name: Mendeley
-  url: https://www.mendeley.com/profiles/leon-moonen/
-  class: ai-mendeley-square
-  title: "Mendeley"
+- name: Zenodo
+  url: https://zenodo.org/search?q=metadata.creators.person_or_org.name:%22Moonen,%20Leon%22
+  class: ai-zotero
+  title: "Zenodo"
 
 - name: GoogleScholar
   url: https://scholar.google.com/citations?user=vndz7hwAAAAJ
@@ -40,7 +40,7 @@
 
 - name: dblp
   url: http://dblp.uni-trier.de/pers/hd/m/Moonen:Leon.html
-  class: icon-archive
+  class: ai-dblp
   title: "dblp"
 
 
