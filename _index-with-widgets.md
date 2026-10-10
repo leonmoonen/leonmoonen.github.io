@@ -4,8 +4,6 @@
 # inserted automagically in the webpage. To make
 # this work, you have to use › layout: frontpage
 #
-# ID for tweets without replies or expanded images: 629648951713660928
-#
 layout: static-frontpage
 title: "Leon Moonen – Software Explorer"
 subheadline: ""
@@ -27,9 +25,4 @@ widget-2:
     url: 'research/news/'
     text-open: ""
     text-close: "<p />"
-widget-3:
-    title: "Recent Tweets"
-    url: "https://twitter.com/intent/follow?screen_name=LeonMoonen"
-    text: "<div id='recentTweets'><a class='twitter-timeline' data-chrome='noheader nofooter noborders transparent' data-tweet-limit='4' href='https://twitter.com/LeonMoonen?ref_src=twsrc%5Etfw'>Tweets by</a><script async src='https://platform.twitter.com/widgets.js' charset='utf-8'></script></div>"
-    alt-more: "« follow @LeonMoonen on Twitter »"
 ---
