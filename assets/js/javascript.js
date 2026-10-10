@@ -2885,7 +2885,9 @@ function FastClick(a,b){"use strict";function c(a,b){return function(){return a.
       if (iframe.length > 0) {
         var data_src = iframe.attr('data-src');
         if (typeof data_src === 'string') {
-          iframe[0].src = iframe.attr('data-src');
+          if (/^https?:\/\//i.test(data_src)) {
+            iframe[0].src = data_src;
+          }
         } else {
           var src = iframe[0].src;
           iframe[0].src = undefined;
