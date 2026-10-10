@@ -2872,7 +2872,11 @@ function FastClick(a,b){"use strict";function c(a,b){return function(){return a.
           iframe = $('iframe', video);
 
       if (iframe.length > 0) {
-        iframe.attr('data-src', iframe[0].src);
+        // Reload the iframe in place to stop playback. Upstream also copied the
+        // URL into a data-src attribute and read it back in open_video; that
+        // round-trip was removed because it changed nothing (src is never
+        // cleared) and it was flagged as DOM text reaching iframe.src
+        // (code scanning alert #7). See DEPENDENCIES.md.
         iframe.attr('src', iframe.attr('src'));
         video.hide();
       }
@@ -2883,16 +2887,11 @@ function FastClick(a,b){"use strict";function c(a,b){return function(){return a.
           iframe = video.find('iframe');
 
       if (iframe.length > 0) {
-        var data_src = iframe.attr('data-src');
-        if (typeof data_src === 'string') {
-          if (/^https?:\/\//i.test(data_src)) {
-            iframe[0].src = data_src;
-          }
-        } else {
-          var src = iframe[0].src;
-          iframe[0].src = undefined;
-          iframe[0].src = src;
-        }
+        // Reload the iframe. Upstream set src to undefined in between, which
+        // made the browser request a page called "undefined".
+        var src = iframe[0].src;
+        iframe[0].src = 'about:blank';
+        iframe[0].src = src;
         video.show();
       }
     },

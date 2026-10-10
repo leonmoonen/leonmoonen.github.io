@@ -94,7 +94,7 @@ jQuery 3.0 removed the `.load(handler)` and `.error(handler)` event shortcuts, a
 | topbar | `.trigger('resize.fndtn.topbar').load(function(){` | `.trigger('resize.fndtn.topbar').on('load', function(){` |
 | reveal | `if (typeof target.selector !== 'undefined') {` | `if (typeof target.jquery !== 'undefined') {` |
 
-Without the first change, Foundation fails to start on jQuery 3 and the navigation menus stop working. The reveal test separates a clicked link (a jQuery object) from AJAX settings (a plain object). On jQuery 3, `.selector` is always undefined, so a modal opened from a link would be treated as an AJAX request and would not open. Every jQuery object has a `.jquery` property, so the new test gives the same result as the old test did on jQuery 2. Apart from jQuery and these four lines, `javascript.js` is unchanged.
+Without the first change, Foundation fails to start on jQuery 3 and the navigation menus stop working. The reveal test separates a clicked link (a jQuery object) from AJAX settings (a plain object). On jQuery 3, `.selector` is always undefined, so a modal opened from a link would be treated as an AJAX request and would not open. Every jQuery object has a `.jquery` property, so the new test gives the same result as the old test did on jQuery 2. Apart from jQuery, these four lines, and the reveal video change below, `javascript.js` is unchanged.
 
 `javascript.min.js` is generated from `javascript.js`:
 
@@ -132,5 +132,45 @@ The test page is not part of the site. Note that the theme stylesheet has no Mag
 ### What to watch for
 
 - **Foundation modules not used on the site.** All Foundation modules in the bundle were tested (see Verification), but only with simple markup and default options. If you start to use one of them on a page, check that page in a browser. The clearing module still reads `.selector` (`/blackout/.test(target.selector)`); this was not changed, because on jQuery 2 the property was already an empty string there, and the fallback `target.closest('.clearing-blackout')` also finds the element itself. The test above closes the lightbox both ways.
-- **Editing the bundle.** Edit `javascript.js`, which the site loads directly. Regenerate `javascript.min.js` with the command above for any consumers that use the minified file.
+- **Editing the bundle.** Edit `javascript.js`, then regenerate `javascript.min.js` with the command above. The site loads only the minified file (`_includes/footer_scripts`).
 - **To undo**, restore both files from the commit before this change: `git checkout <commit>^ -- assets/js/javascript.js assets/js/javascript.min.js`.
+
+## JavaScript: reveal video handling (code scanning alert #7)
+
+- **Date**: 2026-10-10
+- **Alert**: [code scanning #7](https://github.com/leonmoonen/leonmoonen.github.io/security/code-scanning/7), `js/xss-through-dom`, "DOM text is reinterpreted as HTML without escaping meta-characters", `assets/js/javascript.js`; alert #3 reported the same code before the first fix attempt
+- **Affected files**: `assets/js/javascript.js`, `assets/js/javascript.min.js`, `_includes/footer_scripts`
+
+### The issue
+
+The Foundation reveal module stops a video when a modal closes and restarts it when the modal opens. In Foundation 5.5.0:
+
+- `close_video` copied the iframe URL into a `data-src` attribute and set `src` to its own value, which reloads the iframe and stops playback;
+- `open_video` read `data-src` back and assigned it to `iframe.src`.
+
+CodeQL flags the second step: text read from the page (an attribute) is assigned to a URL property, and a `javascript:` URL there would run script.
+
+The practical risk was low. No page on this site uses the reveal module, and the attribute only held a value that the same code had written from the iframe's own address.
+
+**First attempt (pull request #46, Copilot).** It added a check that `data-src` starts with `http://` or `https://`. CodeQL did not accept this check, and alert #7 stayed open on the new line. The same pull request also changed `_includes/footer_scripts` to load `javascript.js` instead of `javascript.min.js`, because the minified file was not rebuilt. That made each page download 55.6 KB instead of 45.5 KB (gzip).
+
+### The solution
+
+The `data-src` round-trip was removed:
+
+- `close_video` only reloads the iframe in place (`iframe.attr('src', iframe.attr('src'))`), as before, so playback still stops;
+- `open_video` always reloads the iframe from its own `src`. This is the branch that Foundation already used when no `data-src` was present.
+
+The round-trip had no effect, because `close_video` never cleared `src`: on the next open, `data-src` held the same URL that the iframe already had. The only case it supported was an iframe written with `data-src` and no `src`, so that the video loads only when the modal opens. This site does not use that.
+
+In the reload, upstream set `src` to `undefined` between the two assignments, which made the browser request a page called `undefined` (a 404). This is now `about:blank`.
+
+`javascript.min.js` was regenerated, and `_includes/footer_scripts` loads the minified file again.
+
+### Verification
+
+A modal with a `.flex-video` iframe was opened, closed and opened again in headless Chrome, with the bundle from before pull request #46 and with the new bundle. A local server counted the requests. With both bundles, the iframe kept its URL, the video was shown on open and hidden on close, and the iframe reloaded on each open and close. Before the change, the first open also caused two requests for `/undefined`; after the change, there were none. The page, module and reveal tests in the jQuery section above were run again with the new bundle, with the same results.
+
+### What to watch for
+
+- **Lazy-loaded videos in a modal.** To load a video only when its modal opens, Foundation's documented approach was an iframe with `data-src` and no `src`. This no longer works. If you need it, add the URL in the page template instead of reading it from the page at run time.
