@@ -25,7 +25,7 @@
 
 - name: Zenodo
   url: https://zenodo.org/search?q=metadata.creators.person_or_org.name:%22Moonen,%20Leon%22
-  class: ai-zotero
+  class: ai-zenodo
   title: "Zenodo"
 
 - name: GoogleScholar
