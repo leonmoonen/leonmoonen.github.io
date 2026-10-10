@@ -132,5 +132,5 @@ The test page is not part of the site. Note that the theme stylesheet has no Mag
 ### What to watch for
 
 - **Foundation modules not used on the site.** All Foundation modules in the bundle were tested (see Verification), but only with simple markup and default options. If you start to use one of them on a page, check that page in a browser. The clearing module still reads `.selector` (`/blackout/.test(target.selector)`); this was not changed, because on jQuery 2 the property was already an empty string there, and the fallback `target.closest('.clearing-blackout')` also finds the element itself. The test above closes the lightbox both ways.
-- **Editing the bundle.** Edit `javascript.js`, then regenerate `javascript.min.js` with the command above. The site loads only the minified file.
+- **Editing the bundle.** Edit `javascript.js`, which the site loads directly. Regenerate `javascript.min.js` with the command above for any consumers that use the minified file.
 - **To undo**, restore both files from the commit before this change: `git checkout <commit>^ -- assets/js/javascript.js assets/js/javascript.min.js`.
