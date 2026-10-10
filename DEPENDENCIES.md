@@ -116,10 +116,21 @@ The site was built twice, with the old bundle and with the new bundle, and each 
 
 Full-page screenshots of the old and new bundle showed zero differing pixels (pixelmatch, threshold 0.1). The only difference measured was the jQuery version.
 
-No page uses the reveal module, so it was tested separately: a modal and a link with `data-reveal-id` were added to `/research/` in the browser. With both bundles, the modal opened on a click and closed with its close button, without errors.
+No page uses the other Foundation modules, so they were tested separately, with the old and the new bundle. The reveal modal was added to `/research/` in the browser. The other five modules were put on one test page that loads the site's stylesheet and `javascript.min.js`, so Foundation starts the same way as on the real site. Results were the same with both bundles, without JavaScript errors:
+
+| Module | Checked |
+|---|---|
+| reveal | A modal opens on a click on a `data-reveal-id` link and closes with its close button. |
+| accordion | A click opens a panel; a click on another panel opens it and closes the first. |
+| dropdown | The click version opens on a click and closes on a click elsewhere. The hover version opens on hover and closes after `hover_timeout` when the mouse leaves. |
+| equalizer | Two columns with different content get the same height. |
+| clearing | A thumbnail opens the lightbox with the large image; "next" moves to the next image; an image that does not exist does not leave the loader running; the lightbox closes with its close button and with a click on the dark background. |
+| magellan | A sub-nav link scrolls to its section and marks it active; scrolling past a section with the mouse wheel also marks it active. |
+
+The test page is not part of the site. Note that the theme stylesheet has no Magellan styles, so the sub-nav gets the `fixed` class but stays in place; this is the same with both bundles.
 
 ### What to watch for
 
-- **Untested Foundation modules.** No page uses accordion, clearing, dropdown, equalizer or magellan, so these were not tested in a browser. The clearing module also reads `.selector` (`/blackout/.test(target.selector)`), but this was not changed: on jQuery 2 the property was an empty string for the element it receives, so the test was already false, and the fallback `target.closest('.clearing-blackout')` also finds the element itself. If you start to use one of these modules, test it first.
+- **Foundation modules not used on the site.** All Foundation modules in the bundle were tested (see Verification), but only with simple markup and default options. If you start to use one of them on a page, check that page in a browser. The clearing module still reads `.selector` (`/blackout/.test(target.selector)`); this was not changed, because on jQuery 2 the property was already an empty string there, and the fallback `target.closest('.clearing-blackout')` also finds the element itself. The test above closes the lightbox both ways.
 - **Editing the bundle.** Edit `javascript.js`, then regenerate `javascript.min.js` with the command above. The site loads only the minified file.
 - **To undo**, restore both files from the commit before this change: `git checkout <commit>^ -- assets/js/javascript.js assets/js/javascript.min.js`.
