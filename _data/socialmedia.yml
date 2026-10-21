@@ -39,7 +39,7 @@
 #  title: "Microsoft Academic Search"
 
 - name: dblp
-  url: http://dblp.uni-trier.de/pers/hd/m/Moonen:Leon.html
+  url: https://dblp.org/pid/m/LeonMoonen.html
   class: ai-dblp
   title: "dblp"
 
