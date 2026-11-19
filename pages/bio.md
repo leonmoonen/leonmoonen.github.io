@@ -9,7 +9,7 @@ header:
     image_fullwidth: "header_unsplash_railroad.jpg"
 ---
 
-Leon Moonen is a Research Professor at Simula Research Laboratory in Oslo, Norway, where he heads the Secure and Trustworthy Intelligent Systems (SENTRY) department. He is also Head of AI Security at Simula's Centre for AI Security and Safety (CAISS). 
+Leon Moonen is a Research Professor at Simula Research Laboratory in Oslo, Norway, where he heads the Secure and Trustworthy Intelligent Systems (SENTRY) department. He is also Director of AI Security at Simula's Centre for AI Security and Safety (CAISS). 
 His research investigates the interplay between artificial intelligence and software engineering, with a focus on security. 
 A central theme is AI security: how AI systems can be attacked, misled, or exploited, and how to make them more robust and trustworthy. 
 This includes red-teaming and adversarial evaluation of large language models (LLMs), 

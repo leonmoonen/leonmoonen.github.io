@@ -9,7 +9,7 @@ header:
     image_fullwidth: "header_unsplash_aloe.jpg"
 ---
 
-I am a [research professor][simhome] and head of the [Secure and Trustworthy Intelligent Systems (SENTRY) department][sentry] at [Simula Research Laboratory][simula] in Oslo, Norway. I am also Head of AI Security at Simula's [Centre for AI Security and Safety (CAISS)][caiss].
+I am a [research professor][simhome] and head of the [Secure and Trustworthy Intelligent Systems (SENTRY) department][sentry] at [Simula Research Laboratory][simula] in Oslo, Norway. I am also Director of AI Security at Simula's [Centre for AI Security and Safety (CAISS)][caiss].
 
 From 2019 to 2025, I was head of Simula's Data-Driven Software Engineering department (dataSED). In 2026, the department moved to Simula's Cyber Security Division and became SENTRY, in line with its increased focus on security and on AI.
 
